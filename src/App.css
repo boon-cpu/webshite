@@ -21,6 +21,27 @@ body {
 
 }
 
+.header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+#drop {
+    position: absolute;
+    top: -200px;
+    transition: all 1s ease;
+    z-index: 1;
+}
+
+#drop.open {
+    position: absolute;
+    top: 100px;
+}
 .App {
     display: flex;
     justify-content: center;
@@ -40,6 +61,18 @@ div > img {
     height: 150px;
 }
 
+.bar {
+    background-color: #f5f5ff;
+    box-shadow: 0 0 38px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 50vw;
+}
+
 .box {
     background-color: #f5f5ff;
     box-shadow: 0 0 38px rgba(0, 0, 0, 0.2);
@@ -49,6 +82,7 @@ div > img {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    transition: all 1s ease;
 }
 
 .links {
@@ -131,6 +165,16 @@ a > img {
     align-items: center;
     flex-direction: column;
     transition: all 300ms ease;
+}
+
+#\^ {
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+
+#waffle {
+    color: #5E5E5E;
 }
 
 @media screen and (min-width: 768px){
