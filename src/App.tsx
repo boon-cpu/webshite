@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import twitter from "./img/twitter-fill.svg";
 import discord from "./img/discord-fill.svg";
@@ -7,6 +7,18 @@ import man from "./img/photo-1552058544-f2b08422138a.png";
 
 const App = () => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (!document) return;
+
+    const listener = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("keyup", listener);
+    return () => document.removeEventListener("keyup", listener);
+  }, [setOpen]);
   return (
     <div className="App">
       <div id="drop" className={(open ? "open" : "") + " bar"}>

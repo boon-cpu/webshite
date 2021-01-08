@@ -16,8 +16,8 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     background: #1D976C;  /* fallback for old browsers */
-    background: -webkit-radial-gradient(#9bcf96, #84B779);  /* Chrome 10-25, Safari 5.1-6 */
-    background: radial-gradient(#9bcf96, #84B779); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-radial-gradient(#A1D69D, #84B779);  /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(#a1d69d, #84B779); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -95,6 +95,7 @@ div > img {
     height: 2px;
     width: 100px;
     margin-bottom: 30px;
+    transition: all 0.3s ease;
 }
 
 .link-button {
@@ -150,8 +151,12 @@ button:active, button:focus {
     outline: none;
 }
 
-.about:hover, .link-button:hover {
+.link-button:hover {
     transform: scale(1.1);
+}
+
+.about:hover .line {
+    width: 120px;
 }
 
 a > img {
