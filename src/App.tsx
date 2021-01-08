@@ -7,6 +7,7 @@ import github from "./img/github-fill.svg";
 import man from "./img/photo-1552058544-f2b08422138a.png";
 
 console.error("Boon :)");
+console.log("Background image made by: https://unsplash.com/@driaug <3");
 const App = () => {
   const [open, setOpen] = useState(true);
 

@@ -15,9 +15,10 @@ body {
     justify-content: center;
     margin: 0 auto;
     min-height: 100vh;
-    background: #1D976C;
-    background: -webkit-radial-gradient(#A1D69D, #84B779);
-    background: radial-gradient(#A1D69D, #84B779);
+    background-image: url('./img/dries-augustyns-_oxIMhN9FiA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -57,17 +58,16 @@ div > img {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    box-shadow: 0 0 38px rgba(0, 0, 0, 0.2);
 }
 
 .bar {
     justify-content: flex-end;
-    box-shadow: 0 0 38px rgba(0, 0, 0, 0.5);
-    width: 300px;
-    height: 467.6px;
+    width: 259.96px;
+    height: 427.6px;
 }
 
 .box {
-    box-shadow: 0 0 38px rgba(0, 0, 0, 0.2);
     transition: all 1s ease;
 }
 
@@ -80,7 +80,7 @@ div > img {
     background-color: #767676;
     height: 2px;
     width: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     transition: all 0.3s ease;
 }
 
@@ -95,11 +95,11 @@ div > img {
     justify-content: center;
     background-color: #84B779;
     border-radius: 15px;
-    margin: 20px;
+    margin: 15px;
     padding: 5px;
-    width: 50px;
-    height: 50px;
     transition: all 200ms ease;
+    width: 55px;
+    height: 55px;
 }
 
 h1 {
@@ -148,8 +148,8 @@ button:active, button:focus {
 }
 
 a > img {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
 }
 
 .about, .back {
@@ -165,20 +165,14 @@ a > img {
 }
 
 #waffle {
+    font-size: 17px;
     color: #5E5E5E;
+    line-height: 27px;
 }
 
 @media screen and (min-width: 768px){
-    a > img {
-        height: 50px;
-        width: 50px;
-    }
-    .link-button {
-        width: 60px;
-        height: 60px;
-    }
     .bar {
-        width: 330px;
-        height: 477.6px;
+        width: 289.96px;
+        height: 457.6px;
     }
 }
