@@ -62,8 +62,8 @@ div > img {
 .bar {
     justify-content: flex-end;
     box-shadow: 0 0 38px rgba(0, 0, 0, 0.5);
-    width: 330px;
-    height: 477.6px;
+    width: 300px;
+    height: 467.6px;
 }
 
 .box {
@@ -178,6 +178,7 @@ a > img {
         height: 60px;
     }
     .bar {
-        /*max-width: 50vw;*/
+        width: 330px;
+        height: 477.6px;
     }
 }
