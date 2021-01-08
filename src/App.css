@@ -23,27 +23,10 @@ body {
     font-weight: normal;
 }
 
-.header {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .blur {
     -webkit-filter: blur(5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-}
-
-#drop {
-    position: absolute;
-    top: -2000px;
-    transition: all 1s ease;
-    z-index: 1;
-}
-
-#drop.open {
-    position: absolute;
-    top: 100px;
 }
 
 .App {
@@ -77,8 +60,10 @@ div > img {
 }
 
 .bar {
+    justify-content: flex-end;
     box-shadow: 0 0 38px rgba(0, 0, 0, 0.5);
-    max-width: 80vw;
+    width: 330px;
+    height: 477.6px;
 }
 
 .box {
@@ -97,6 +82,11 @@ div > img {
     width: 100px;
     margin-bottom: 30px;
     transition: all 0.3s ease;
+}
+
+#waffle {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .link-button {
@@ -147,9 +137,14 @@ button:active, button:focus {
 .link-button:hover {
     transform: scale(1.1);
 }
-
+.back > .line {
+    width: 80px;
+}
 .about:hover .line {
     width: 120px;
+}
+.back:hover .line {
+    width: 110px;
 }
 
 a > img {
@@ -157,7 +152,7 @@ a > img {
     width: 40px;
 }
 
-.about {
+.about, .back {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,9 +160,7 @@ a > img {
     transition: all 300ms ease;
 }
 
-#\^ {
-    width: 30px;
-    height: 30px;
+#back {
     font-weight: bold;
 }
 
@@ -185,6 +178,6 @@ a > img {
         height: 60px;
     }
     .bar {
-        max-width: 50vw;
+        /*max-width: 50vw;*/
     }
 }
