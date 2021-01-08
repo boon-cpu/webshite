@@ -15,10 +15,12 @@ body {
     justify-content: center;
     margin: 0 auto;
     min-height: 100vh;
-    background: #1D976C;  /* fallback for old browsers */
-    background: -webkit-radial-gradient(#A1D69D, #84B779);  /* Chrome 10-25, Safari 5.1-6 */
-    background: radial-gradient(#a1d69d, #84B779); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #1D976C;
+    background: -webkit-radial-gradient(#A1D69D, #84B779);
+    background: radial-gradient(#A1D69D, #84B779);
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .header {
@@ -31,21 +33,25 @@ body {
     -ms-filter: blur(5px);
     filter: blur(5px);
 }
+
 #drop {
     position: absolute;
     top: -2000px;
     transition: all 1s ease;
     z-index: 1;
 }
+
 #drop.open {
     position: absolute;
     top: 100px;
 }
+
 .App {
     display: flex;
     justify-content: center;
     padding: 15px;
 }
+
 .avatar {
     border-radius: 100%;
     background-size: cover;
@@ -59,6 +65,7 @@ div > img {
     object-fit: cover;
     height: 150px;
 }
+
 .bar, .box {
     background-color: #f5f5ff;
     border-radius: 25px;
@@ -68,6 +75,7 @@ div > img {
     align-items: center;
     padding: 20px;
 }
+
 .bar {
     box-shadow: 0 0 38px rgba(0, 0, 0, 0.5);
     max-width: 80vw;
@@ -105,8 +113,6 @@ div > img {
 }
 
 h1 {
-    font-family: Poppins, sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 60px;
@@ -117,9 +123,6 @@ h1 {
 
 p {
     margin-top: 0;
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 33px;
     text-align: center;
@@ -127,9 +130,6 @@ p {
 }
 
 button {
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 36px;
     text-align: center;

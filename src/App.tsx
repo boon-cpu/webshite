@@ -20,6 +20,7 @@ const App = () => {
     document.addEventListener("keyup", listener);
     return () => document.removeEventListener("keyup", listener);
   }, [setOpen]);
+
   return (
     <div className="App">
       <div id="drop" className={(open ? "open" : "") + " bar"}>
@@ -27,7 +28,7 @@ const App = () => {
           <button
             id="^"
             onClick={() => {
-              setOpen(!open);
+              setOpen(false);
             }}
           >
             ^
@@ -50,7 +51,7 @@ const App = () => {
         <div className="about">
           <button
             onClick={() => {
-              setOpen(!open);
+              setOpen(true);
             }}
           >
             About me
