@@ -5,6 +5,7 @@ import discord from "./img/discord-fill.svg";
 import github from "./img/github-fill.svg";
 import man from "./img/photo-1552058544-f2b08422138a.png";
 
+console.error("Boon :)");
 const App = () => {
   const [open, setOpen] = useState(false);
   useEffect(() => {

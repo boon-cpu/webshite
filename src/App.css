@@ -59,28 +59,22 @@ div > img {
     object-fit: cover;
     height: 150px;
 }
-
-.bar {
+.bar, .box {
     background-color: #f5f5ff;
-    box-shadow: 0 0 38px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+.bar {
+    box-shadow: 0 0 38px rgba(0, 0, 0, 0.5);
     max-width: 80vw;
 }
 
 .box {
-    background-color: #f5f5ff;
     box-shadow: 0 0 38px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
     transition: all 1s ease;
 }
 
