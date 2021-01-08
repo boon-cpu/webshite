@@ -33,11 +33,10 @@ body {
 }
 #drop {
     position: absolute;
-    top: -200px;
+    top: -2000px;
     transition: all 1s ease;
     z-index: 1;
 }
-
 #drop.open {
     position: absolute;
     top: 100px;
@@ -70,7 +69,7 @@ div > img {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    max-width: 50vw;
+    max-width: 80vw;
 }
 
 .box {
@@ -190,5 +189,8 @@ a > img {
     .link-button {
         width: 60px;
         height: 60px;
+    }
+    .bar {
+        max-width: 50vw;
     }
 }
