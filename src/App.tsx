@@ -47,6 +47,7 @@ const App = () => {
             <div className="line" />
           </div>
         </div>
+
         <div className="box">
           <div className="avatar">
             <img src={man} alt="avatar" className="avatar" />
@@ -54,24 +55,38 @@ const App = () => {
           <h1>Harrison Boon</h1>
           <p>Full-stack TypeScript engineer</p>
           <div className="about">
-            <button onClick={handleClick}>About me</button>
+            <button id="about" onClick={handleClick}>
+              About me
+            </button>
             <div className="line" />
           </div>
           <div className="links">
             <div className="link-button">
-              <a href="https://twitter.com/boon_cpu">
-                <img src={twitter} alt="twitter" />
-              </a>
+              <img
+                src={twitter}
+                alt="twitter"
+                onClick={() => {
+                  window.location.href = "https://twitter.com/boon_cpu";
+                }}
+              />
             </div>
             <div className="link-button">
-              <a href="https://dsc.bio/boon">
-                <img src={discord} alt="discord" />
-              </a>
+              <img
+                src={discord}
+                alt="discord"
+                onClick={() => {
+                  window.location.href = "https://dsc.bio/boon";
+                }}
+              />
             </div>
             <div className="link-button">
-              <a href="https://github.com/boon-cpu">
-                <img src={github} alt="github" />
-              </a>
+              <img
+                src={github}
+                alt="github"
+                onClick={() => {
+                  window.location.href = "https://github.com/boon-cpu";
+                }}
+              />
             </div>
           </div>
         </div>
