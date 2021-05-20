@@ -110,6 +110,8 @@ button:active, button:focus {
     transition: all 200ms ease;
     width: 55px;
     height: 55px;
+    color: #f5f5ff;
+    text-decoration: none;
 }
 
 .link-button:hover {

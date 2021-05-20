@@ -61,33 +61,24 @@ const App = () => {
             <div className="line" />
           </div>
           <div className="links">
-            <div className="link-button">
+            <a className="link-button" href="https://twitter.com/boon_cpu" rel="noreferrer">
               <img
                 src={twitter}
                 alt="twitter"
-                onClick={() => {
-                  window.location.href = "https://twitter.com/boon_cpu";
-                }}
               />
-            </div>
-            <div className="link-button">
+            </a>
+            <a className="link-button" href="https://dsc.bio/boon" rel="noreferrer">
               <img
                 src={discord}
                 alt="discord"
-                onClick={() => {
-                  window.location.href = "https://dsc.bio/boon";
-                }}
               />
-            </div>
-            <div className="link-button">
+            </a>
+            <a className="link-button" href="https://github.com/boon-cpu" rel="noreferrer">
               <img
                 src={github}
                 alt="github"
-                onClick={() => {
-                  window.location.href = "https://github.com/boon-cpu";
-                }}
               />
-            </div>
+            </a>
           </div>
         </div>
       </ReactCardFlip>
